@@ -1,7 +1,5 @@
 package com.jaume.penjat;
 
-import java.awt.*;
-
 public class Penjat {
 
     public static void main(String[] args) {
