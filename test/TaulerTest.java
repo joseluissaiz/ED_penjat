@@ -1,5 +1,3 @@
-package test;
-
 import com.jaume.penjat.Tauler;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -27,11 +25,13 @@ class TaulerTest {
     }
 
     @Test
+    //Revisar - Falla
     void verificarEntradaIncorrecte() {
         assertEquals("Lletra incorrecte",this.tauler.verificar("ll"));
     }
 
     @Test
+    //Revisar - Falla
     void verificarEntradaCorrecteEncertat() {
         this.tauler.verificar("a");
         assertArrayEquals(new String[]{ null,"a",null,"a",null,null,"a" },this.tauler.getPalabraEndevinada());
@@ -44,6 +44,7 @@ class TaulerTest {
     }
 
     @Test
+    //Revisar - Falla
     void imprimirCapEncert() {
         assertEquals("_______", this.tauler.imprimir());
     }
