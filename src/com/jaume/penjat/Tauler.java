@@ -41,8 +41,11 @@ public class Tauler {
             }
             if (!isInList){
                 this.vides --;
+                return "Has fallat";
+
+            } else {
+                return "Lletra encertada";
             }
-            return imprimir();
         } else {
             return "Lletra incorrecte";
         }
